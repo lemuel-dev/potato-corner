@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Corner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+        <link rel="stylesheet" href="boxicons.min.css">
+         <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+   
+
+</head>
+<body>
+    <header class="home">
+        <div class="logo">
+            <h2> Potato Corner</h2>
+        </div>
+        <div class="bx bx-menu" id="menu-icon" >
+        </div>
+        <ul class="nav-bar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <section class="home-section" id="home">
+        <div class="image-home">
+            <img src="./assets/chips.png">
+            <h2> Potato Corner</h2>
+            <p>A good and delicious potatoes serve for you !</p>
+        </div>
+        
+    </section>
+    <div class="button">
+        
+        <a href="#" class="home-btn"> Order Now</a>
+    </div>
+
+    <section class="about-us" id="about">
+        <div class="about-title">
+            <h2> About Us</h2>
+        </div>
+
+        <div class="about-content">
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, quisquam accusantium nostrum modi, nemo, officia veritatis ipsum facere maxime assumenda voluptatum enim! Labore maiores placeat impedit, vero sed est voluptas!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita alias dicta autem, maiores doloremque quo perferendis, ut obcaecati harum, <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit quisquam accusantium nostrum modi, nemo, officia veritatis ipsum facere maxime assumenda voluptatum enim! Labore maiores placeat impedit, vero sed est voluptas!Lorem ipsum dolor sit ame. </p>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="menu-title">
+            <h2> Menu</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit quisquam accusantium nostrum modi, nemo, officia veritatis ipsum facere maxime assumenda voluptatum enim! Labore maiores placeat impedit, vero sed est voluptas!Lorem ipsum dolor sit ame.</p>
+        </div>
+
+        <div class="menu-content">
+            <div class="products">
+                <img src="./assets/fries.png">
+                <h3> French Fries</h3>
+                <p> 150php</p>
+            </div>
+
+           
+            <div class="products">
+                <img src="./assets/fries.png">
+                <h3> French Fries</h3>
+                <p> 150php</p>
+            </div>
+            
+            <div class="products">
+                <img src="./assets/fries.png">
+                <h3> French Fries</h3>
+                <p> 150php</p>
+            </div>
+
+            <div class="products">
+                <img src="./assets/chipps.png" class="chips">
+                <h3> Potato Chips</h3>
+                <p> 150php</p>
+            </div>
+
+            <div class="products">
+                <img src="./assets/chipps.png" class="chip">
+                <h3> Potato Chips</h3>
+                <p> 150php</p>
+            </div>
+
+            <div class="products">
+                <img src="./assets/chipps.png" class="chip">
+                <h3> Potato Chips</h3>
+                <p> 150php</p>
+            </div>
+        </div>
+        <div class="button">
+            <a href="#" class="home-btn"> Order Now</a>
+        </div>
+    </section>
+   
+
+    <footer class="contact-us" id="contact">
+        <div class="contact-title">
+            <h2> Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit quisquam maiores placeat impedit, vero sed est voluptas!Lorem ipsum dolor sit ame.</p>
+        </div>
+        <div class="social">
+            <ul>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </ul>
+        </div>
+
+       <h3 class="copyright"> responsive 2 || lemuel_dev 2023</h3>
+
+    </div>
+       
+    </footer>
+    
+    <script>
+            const header = document.querySelector ("header");
+            let menu = document.querySelector('#menu-icon');
+            let navbar = document.querySelector('.nav-bar');
+
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x');
+                navbar.classList.toggle('open');
+            };
+
+            window.onscroll = () => {
+            menu.classList.remove('bx-x');
+            navbar.classList.remove('open');
+              };
+
+            window.addEventListener ("scroll" , function(){
+            header.classList.toggle ("sticky" , window.scrollY > 0); 
+         });
+    </script>
+
+</body>
+
+<style>
+   
+</style>
+
+
+</html>
